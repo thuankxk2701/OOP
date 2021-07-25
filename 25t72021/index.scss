@@ -1,0 +1,69 @@
+$md: black;
+$mdd: #c69;
+$co1: 20px;
+$co2: 28px;
+$co3: 30px;
+$fontword: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+$width_content: 1200px;
+$distance_column: 20px;
+@mixin image_left() {
+  float: left;
+  width: 100px;
+  margin-right: 20px;
+}
+@mixin image_left_2($m_right) {
+  float: $m-right;
+  width: 100px;
+  margin-right: 20px;
+}
+.jumbotron {
+  width: 900px;
+  margin: auto;
+  background: #699;
+  img {
+    @include image_left;
+  }
+  h1 {
+    &:hover {
+      color: black;
+    }
+    &:after {
+      content: "code nayf the, boiwr css";
+    }
+    &:before {
+      content: "helo";
+    }
+    text-align: center;
+    color: $mdd;
+  }
+  p {
+    color: red;
+    font : {
+      size: 20px;
+      style: italic;
+      family: $fontword;
+      weight: bold;
+    }
+  }
+}
+.different {
+  width: 500px;
+  margin: auto;
+  img {
+    @include image_left_2(left);
+  }
+}
+.content {
+  width: $width_content;
+  margin: auto;
+  height: 500px;
+  .column {
+    background: lightblue;
+    width: ($width_content - (2 * $distance_column))/3;
+    margin-right: $distance_column;
+    float: left;
+    &:nth-child(3) {
+      margin-right: 0px;
+    }
+  }
+}

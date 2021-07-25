@@ -1,0 +1,45 @@
+.jumbotron {
+  width: 900px;
+  margin: auto;
+  background: #699; }
+  .jumbotron img {
+    float: left;
+    width: 100px;
+    margin-right: 20px; }
+  .jumbotron h1 {
+    text-align: center;
+    color: #c69; }
+    .jumbotron h1:hover {
+      color: black; }
+    .jumbotron h1:after {
+      content: "code nayf the, boiwr css"; }
+    .jumbotron h1:before {
+      content: "helo"; }
+  .jumbotron p {
+    color: red;
+    font-size: 20px;
+    font-style: italic;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold; }
+
+.different {
+  width: 500px;
+  margin: auto; }
+  .different img {
+    float: left;
+    width: 100px;
+    margin-right: 20px; }
+
+.content {
+  width: 1200px;
+  margin: auto;
+  height: 500px; }
+  .content .column {
+    background: lightblue;
+    width: 386.6666666667px;
+    margin-right: 20px;
+    float: left; }
+    .content .column:nth-child(3) {
+      margin-right: 0px; }
+
+/*# sourceMappingURL=index.css.map */
